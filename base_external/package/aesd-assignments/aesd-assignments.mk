@@ -19,7 +19,7 @@ AESD_ASSIGNMENTS_MODULE_SUBDIRS = aesd-char-driver
 define AESD_ASSIGNMENTS_BUILD_CMDS
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/finder-app all
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/server all
-# 	$(MAKE) -C $(@D)/aesd-char-driver KERNELDIR=$(LINUX_DIR) ARCH=arm64 CROSS_COMPILE=$(TARGET_CROSS) modules
+ 	$(MAKE) -C $(@D)/aesd-char-driver KERNELDIR=$(LINUX_DIR) ARCH=arm64 CROSS_COMPILE=$(TARGET_CROSS) modules
 endef
 
 define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
